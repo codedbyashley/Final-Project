@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding 👩‍💻</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=M+PLUS+Rounded+1c:wght@900&display=swap");
+
+      header {
+        text-align: center;
+      }
+      h1 {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 50px;
+        color: #5c6bc0;
+      }
+      p {
+        font-family: "M PLUS 1p", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        color: #2a428c;
+        border: #ffff;
+        padding: 16px 24px;
+        background-color: rgb(255, 255, 255);
+        border-width: thick;
+        border-style: solid;
+        margin: auto;
+        border-radius: 1000px;
+        width: 300;
+        letter-spacing: 1px;
+        line-break: strict;
+        height: max-content;
+      }
+      body {
+        background-color: #73f9a9;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        font-family: "M PLUS 1p", sans-serif;
+      }
+      .container {
+        word-wrap: break-word;
+        width: 700px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 16px 24px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #2a428c;
+        border: 1px solid rgb(42, 66, 140);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        font-family: "M PLUS 1p", sans-serif;
+      }
+      button:hover {
+        background: #ffff;
+        color: #ffff;
+        background-color: #4fabf7;
+        border: #4fabf7;
+      }
+      footer {
+        padding: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WHAT IS CODING?</h1>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/738/original/binary-code_%281%29.png?1620598171"
+      alt="codeText"
+      width="500"
+    />
+    <br />
+    <div class="container">
+      <p>
+        Coding, also known as <em>computer programming</em>, is a set of
+        instructions given to a computer by programmers and developers. Every
+        line of code tells a computer what to do. Commands are provided to every
+        machine by using different programming and markup languages.
+      </p>
+    </div>
+    <br />
+    <br />
+    <button>Is this page helpful?</button>
+    <br />
+    <br />
+    <footer>
+      <a
+        class="github-address"
+        href="https://github.com/codedbyashley"
+        target="_blank"
+      >
+        <img
+          class="github-icon"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/736/original/github.png?1620597944"
+          width="30"
+        />
+        Coded by Ashley Crouch
+      </a>
+    </footer>
+    <script>
+      function helpful() {
+        let answer = prompt("Is this page helpful?");
+        if (answer === "yes") {
+          alert("Thank you!");
+        } else {
+          alert("Thanks for your feedback!");
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", helpful);
+    </script>
+  </body>
+</html>
